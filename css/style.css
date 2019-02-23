@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right,#e66987,#a55);
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper>*{
+    flex:1;
+}
+button.timing-btn {
+    height: 40px;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    border: 2px solid #b1809b;
+    color: #fff;
+    cursor: pointer;
+    margin:0 2px;
+}
+.wrapper input {
+    font-size: 20px;
+    background: rgba(0,0,0,0.1);
+    border: none;
+    color: #fff;
+    padding-left:.5rem;
+}
+.wrapper ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.wrapper :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.wrapper ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+.timer-display{
+    padding-top:10rem;
+    text-align:center;
+    color:#fff;
+}
+#countdown{
+    font-size: 10rem;
+}
+#final-time{
+    font-size:2rem;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper input{
+        flex-basis: 100%;
+        padding:1rem;
+        margin:4px;
+    }
+    #countdown {
+        font-size: 6rem;
+    }
+}
